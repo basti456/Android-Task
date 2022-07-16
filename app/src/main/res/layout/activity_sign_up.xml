@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:layout_constraintBottom_toTopOf="@id/userName"
+                app:layout_constraintTop_toBottomOf="@id/textViewSignUp">
+
+                <ImageView
+                    android:id="@+id/profImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dummy_image" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:text="Sign Up,"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/imgCard"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="12"
+                android:hint="Enter Your Name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCard" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="12"
+                android:hint="Enter Your Email Address"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userName" />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="12"
+                android:hint="Enter Your Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userEmail"
+                app:passwordToggleEnabled="true" />
+
+            <EditText
+                android:id="@+id/userConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="12"
+                android:hint="Confirm Your Password"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userPassword" />
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="28dp"
+                android:background="#F5F5F5"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/userConfirmPassword" />
+
+            <TextView
+                android:id="@+id/textViewSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Registered , Sign In !"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
+                app:layout_constraintVertical_bias="0.145" />
+
+            <TextView
+                android:id="@+id/textViewclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="*Click to add your Image,"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCard" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

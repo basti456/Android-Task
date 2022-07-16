@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/rl_cart_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/singleproduct" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cart_details"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#de4500"
+        app:layout_constraintBottom_toTopOf="@id/btmNavHome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/quantity_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:text="1"
+            android:textColor="#fcfcfc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_toEndOf="@id/quantity_item"
+
+            android:text="item"
+            android:textColor="#fcfcfc"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_toEndOf="@id/item"
+            android:text="|"
+            android:textColor="#fcfcfc"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/total_cost_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_toEndOf="@id/dash"
+
+            android:text="100"
+            android:textColor="#fcfcfc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtViewCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10sp"
+            android:maxLines="2"
+            android:text="VIEW CART"
+            android:textColor="#fcfcfc"
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btmNavHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/customer_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
