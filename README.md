@@ -1,5 +1,10 @@
 # Android-Task
 An ecommerce application using kotlin,firebase firestore,firebase authentication,firebase storage.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/77157007/179363648-f32d4ac0-8868-43a2-a5e7-a17d04e02995.jpg" width="256" height="455">
+  <img src="https://user-images.githubusercontent.com/77157007/179363648-f32d4ac0-8868-43a2-a5e7-a17d04e02995.jpg" width="256" height="455">
+  <img src="https://user-images.githubusercontent.com/77157007/179363648-f32d4ac0-8868-43a2-a5e7-a17d04e02995.jpg" width="256" height="455">
+</p>
 ![Screenshot_2022-07-16-20-04-05-237_com ads web one myapplication](https://user-images.githubusercontent.com/77157007/179363648-f32d4ac0-8868-43a2-a5e7-a17d04e02995.jpg)
 ![Screenshot_2022-07-16-19-05-23-565_com ads web one myapplication](https://user-images.githubusercontent.com/77157007/179363750-8a3d0e49-1a52-4e93-8958-7cedcdde08a5.jpg)
 ![Screenshot_2022-07-16-21-45-59-543_com ads web one myapplication](https://user-images.githubusercontent.com/77157007/179363778-ce883e86-cf93-4d3a-8343-0f24a14f4671.jpg)
