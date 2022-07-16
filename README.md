@@ -18,7 +18,6 @@ An ecommerce application using kotlin,firebase firestore,firebase authentication
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/77157007/179363972-6222a9d4-c017-4c2f-9b2f-1d41a7ad96df.jpg" width="256" height="455">
-  <img src="https://user-images.githubusercontent.com/77157007/179363990-ab2f1c3b-86e0-42ee-a6ec-beae63dabb62.jpg" width="256" height="455">
   <img src="https://user-images.githubusercontent.com/77157007/179364004-2aca434d-f9c0-4a6a-9297-a381437d4980.jpg" width="256" height="455">
 </p>
 <p align="center">
